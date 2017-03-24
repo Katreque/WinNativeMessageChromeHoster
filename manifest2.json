@@ -1,0 +1,9 @@
+{
+  "name": "kappa.native",
+  "description": "Native messaging host",
+  "path": "C:\\Users\\renan.nimbus\\Desktop\\native.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://nocfccbbegkjjkoipgacibpfelkbfjel/"
+  ]
+}

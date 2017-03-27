@@ -12,24 +12,24 @@ int main(){
             length = length | (read_char << i*8);
         }
 
-        std::string msg = "";
+        std::string men = "";
         for (int i = 0; i < length; i++)
         {
-            msg += getchar();
+            men += getchar();
         }
         
-        std::ofstream out("kappa.txt");
-        out << msg;
+        std::ofstream outfile("kappa.txt");
+        outfile << men << std::flush;
+        outfile.close();
 
-		std::string message = "{\"text\":\"Não. É o Pele!\"}";
+		std::string message = "{\"text\":\"Nao! Sou o Jo Soares! Sua ...\"}";
         unsigned int len = message.length();
 
-        len = length;
         std::cout   << char(len>>0)
                     << char(len>>8)
                     << char(len>>16)
                     << char(len>>24);
 
-        std::cout << msg << std::flush;
+        std::cout << message << std::flush;
     return 0;
 }
